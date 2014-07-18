@@ -1,0 +1,26 @@
+{
+  "name": "ember-cli-traceur",
+  "version": "0.0.1",
+  "description": "A traceur compiler add-on for ember-cli",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidblurton/ember-cli-traceur.git"
+  },
+  "keywords": [
+    "ember-cli",
+    "traceur",
+    "compiler",
+    "esnext",
+    "es6"
+  ],
+  "author": "David Blurton",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/davidblurton/ember-cli-traceur/issues"
+  },
+  "homepage": "https://github.com/davidblurton/ember-cli-traceur",
+  "dependencies": {
+    "broccoli-traceur": "~0.7.0"
+  }
+}
