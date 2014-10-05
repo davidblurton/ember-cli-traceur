@@ -14,4 +14,4 @@ npm install --save-dev ember-cli-traceur
 ### References
 
 * [traceur compiler](https://github.com/google/traceur-compiler)
-* [broccoli-traceur](https://github.com/sindresorhus/broccoli-traceurn)
+* [broccoli-traceur](https://github.com/sindresorhus/broccoli-traceur)
