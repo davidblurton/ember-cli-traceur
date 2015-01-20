@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-traceur",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A traceur compiler add-on for ember-cli",
   "main": "index.js",
   "repository": {
@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/davidblurton/ember-cli-traceur",
   "dependencies": {
-    "broccoli-traceur": "~0.7.0"
+    "broccoli-traceur": "~0.11.0"
   }
 }
