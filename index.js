@@ -4,31 +4,31 @@ var path   = require('path');
 var fs     = require('fs');
 var esNext = require('broccoli-traceur');
 
-function ESNextPlugin(options) {
+function TraceurPlugin(options) {
   this.name = 'ember-cli-traceur';
   this.ext = 'js';
   this.options = options || {};
 }
 
-ESNextPlugin.prototype.toTree = function(tree) {
+TraceurPlugin.prototype.toTree = function(tree) {
   return esNext(tree, this.options);
 };
 
-function EmberCLIESNext(project) {
+function EmberTraceur(project) {
   this.project = project;
   this.name    = 'Ember CLI Traceur';
 }
 
-EmberCLIESNext.prototype.treeFor = function treeFor() {
+EmberTraceur.prototype.treeFor = function treeFor() {
 };
 
-EmberCLIESNext.prototype.included = function included(app) {
+EmberTraceur.prototype.included = function included(app) {
   var registry = app.registry;
   this.app = app;
 
-  var plugin = new ESNextPlugin(this.app.options.esnextOptions);
+  var plugin = new TraceurPlugin(this.app.options.esnextOptions);
 
   registry.add('js', plugin);
 };
 
-module.exports = EmberCLIESNext;
+module.exports = EmberTraceur;
